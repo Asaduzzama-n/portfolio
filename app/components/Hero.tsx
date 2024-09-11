@@ -32,7 +32,7 @@ const Hero = () => {
               <MagicButton
                 title="DOWNLOAD CV"
                 icon={downloadIcon}
-                otherClasses="w-full"
+                otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
               ></MagicButton>
             </div>
             <div className="flex  justify-start items-center">
@@ -59,7 +59,7 @@ const Hero = () => {
         <MagicButton
           title="SEE MY WORK"
           icon={arrowIcon}
-          otherClasses="w-full"
+          otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
         ></MagicButton>
       </div>
     </section>

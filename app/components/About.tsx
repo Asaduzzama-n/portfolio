@@ -7,17 +7,24 @@ import {
   bottomTransition,
   leftTransition,
   rightTransition,
+  ToolBoxVariants,
 } from "@/lib/framer-motion";
+import TextRevealing from "./ui/TextRevealing";
+
+const stagger = 0.25;
 
 const About = () => {
   return (
     <div className=" mt-20 text-white">
-      <div className="text-center">
-        <h1 className="text-2xl mb-10">About Me</h1>
-        <h1 className="text-4xl font-semibold">A Glimpse Into My World</h1>
-        <small>
-          Learn more about who I am, What I do, and what inspires me.
-        </small>
+      <div className="text-center mb-20 ">
+        <TextRevealing
+          className="text-5xl font-semibold "
+          text="A Glimpse Into My World"
+        ></TextRevealing>
+        <TextRevealing
+          className=""
+          text="Learn more about who I am, What I do, and what inspires me."
+        ></TextRevealing>
       </div>
       <div className="my-10">
         <div className=" sm:flex  ">
@@ -26,28 +33,39 @@ const About = () => {
             whileInView="onscreen"
             viewport={{ once: false, amount: 0.2 }}
             variants={leftTransition}
-            className="w-full md:mx-2 sm:w-2/3  bg-purple/5 rounded-md p-4 "
+            className=" w-full md:mx-2 sm:w-2/3  bg-purple/5 rounded-md p-4 "
           >
             <h1 className="text-xl ">Education</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 my-5">
+            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-5 my-5">
               {educationData?.map(
                 ({ id, title, timeline, courseType, institute }) => (
-                  <div
-                    className="mx-4  border-b-4 border-purple/5 p-2 "
+                  <MotionDiv
+                    variants={ToolBoxVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{
+                      delay: id * 0.4,
+                      ease: "easeInOut",
+                      duration: 0.8,
+                    }}
+                    className="mx-4 relative h-40 border-b-4 bg-gradient-to-r from-purple/5 to-purple/10 rounded-md hover:scale-110 hover:bg-purple/10 duration-200  border-purple/5 p-4 "
                     key={id}
                   >
                     <p className=" ">{title}</p>
                     <br />
-                    <div className="mb-2">
-                      <small className="bg-purple/20 px-2 py-1 rounded-full mr-2">
-                        {courseType}
-                      </small>
-                      <small className="bg-purple/20 px-2 py-1 rounded-full ">
-                        {timeline}
-                      </small>
+                    <div className="absolute bottom-5">
+                      <div className="mb-2">
+                        <small className="bg-purple/20 px-2 py-1 rounded-full mr-2">
+                          {courseType}
+                        </small>
+                        <small className="bg-purple/20 px-2 py-1 rounded-full ">
+                          {timeline}
+                        </small>
+                      </div>
+                      <p>{institute}</p>
                     </div>
-                    <p>{institute}</p>
-                  </div>
+                  </MotionDiv>
                 )
               )}
             </div>
@@ -57,7 +75,7 @@ const About = () => {
             whileInView="onscreen"
             viewport={{ once: false, amount: 0.2 }}
             variants={rightTransition}
-            className="w-full  sm:w-1/3 md:mx-2 bg-purple/5 rounded-md p-2 mt-5 sm:mt-0"
+            className="w-full  sm:w-1/3 md:mx-2 bg-purple/5 rounded-md p-4 mt-5 sm:mt-0"
           >
             <h1 className="text-xl">Beyond the Code</h1>
             <small className="">
@@ -91,17 +109,31 @@ const About = () => {
           variants={bottomTransition}
           className="w-full bg-purple/5  rounded-md p-4 my-5"
         >
-          <h1 className="text-xl">My Toolbox</h1>
+          <h1 className="text-xl ">My Toolbox</h1>
           <small className="">
             Explore the technologies and tools I use to craft exceptional
             digital experiences.
           </small>
-          <MotionDiv className="flex flex-wrap justify-center my-5">
+          <MotionDiv
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0.8 }}
+            className="flex flex-wrap justify-center my-5"
+          >
             {techData.map(({ id, title, image }) => (
               <MotionDiv
+                variants={ToolBoxVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  delay: id * stagger,
+                  ease: "easeInOut",
+                  duration: 0.5,
+                }}
                 key={id}
                 id="item"
-                className=" flex items-center justify-center w-24 h-20 bg-gradient-to-tr from-purple/5 to-purple/15 rounded-md m-2 "
+                className="hover:-translate-y-1 hover:bg-purple/15 flex items-center justify-center w-24 h-20 bg-gradient-to-tr from-purple/5 to-purple/15 rounded-md m-2 "
               >
                 <Image
                   className="p-1 rounded-md"

@@ -1,19 +1,11 @@
 import { Variants } from "framer-motion";
 
 export const ToolBoxVariants: Variants = {
-  offscreen: {
-    x: -600,
+  hidden: {
     opacity: 0,
   },
-  onscreen: {
-    x: 0,
-    rotate: 0,
+  visible: {
     opacity: 1,
-    transition: {
-      type: "spring",
-      bounce: 0.2,
-      duration: 5,
-    },
   },
 };
 
@@ -66,4 +58,9 @@ export const bottomTransition: Variants = {
       duration: 3,
     },
   },
+};
+
+export const charVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
 };
