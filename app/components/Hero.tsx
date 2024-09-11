@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="pb-10   mx-auto py-20 md:pt-40 ">
+    <section className="pb-10   mx-auto py-20 md:pt-40 min-h-screen">
       <div className="">
         <BackgroundBeams></BackgroundBeams>
       </div>
@@ -79,12 +79,14 @@ const Hero = () => {
         </MotionDiv>
       </div>
 
-      <div className="my-20 flex justify-center">
-        <MagicButton
-          title="SEE MY WORK"
-          icon={arrowIcon}
-          otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
-        ></MagicButton>
+      <div className="mt-20 flex justify-center">
+        <a href="#projects">
+          <MagicButton
+            title="SEE MY WORK"
+            icon={arrowIcon}
+            otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
+          ></MagicButton>
+        </a>
       </div>
     </section>
   );

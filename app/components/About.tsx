@@ -15,7 +15,7 @@ const stagger = 0.25;
 
 const About = () => {
   return (
-    <div className=" mt-20 text-white">
+    <div className="  text-white min-h-screen">
       <div className="text-center mb-20 ">
         <TextRevealing
           className="text-5xl font-semibold "
@@ -105,9 +105,9 @@ const About = () => {
         <MotionDiv
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
           variants={bottomTransition}
-          className="w-full bg-purple/5  rounded-md p-4 my-5"
+          className="w-full bg-purple/5  rounded-md p-4 my-5 "
         >
           <h1 className="text-xl ">My Toolbox</h1>
           <small className="">
@@ -125,7 +125,7 @@ const About = () => {
                 variants={ToolBoxVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{
                   delay: id * stagger,
                   ease: "easeInOut",

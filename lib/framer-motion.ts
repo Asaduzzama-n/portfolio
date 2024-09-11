@@ -45,7 +45,7 @@ export const rightTransition: Variants = {
 
 export const bottomTransition: Variants = {
   offscreen: {
-    y: 200,
+    y: -100,
     opacity: 0,
   },
   onscreen: {
@@ -54,8 +54,8 @@ export const bottomTransition: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      bounce: 0.2,
-      duration: 3,
+      bounce: 0.3,
+      duration: 2,
     },
   },
 };
@@ -63,4 +63,19 @@ export const bottomTransition: Variants = {
 export const charVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
+};
+
+export const variants: Variants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 50,
+    rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
 };

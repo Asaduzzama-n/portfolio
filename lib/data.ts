@@ -251,82 +251,173 @@ export const techData = [
   },
   {
     id: 7,
+    title: "MongoDB",
+    image: "/tech/mongo.png",
+  },
+  {
+    id: 8,
     title: "MySQL",
     image: "/tech/MySQL.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "PostgresSQL",
     image: "/tech/PostgresSQL.png",
   },
   {
-    id: 9,
+    id: 10,
     title: "Mongoose",
     image: "/tech/Mongoose.js.png",
   },
   {
-    id: 10,
+    id: 11,
     title: "Prisma",
     image: "/tech/prisma.webp",
   },
   {
-    id: 11,
+    id: 12,
     title: "Node.js",
     image: "/tech/Node.js.png",
   },
   {
-    id: 12,
+    id: 13,
     title: "Typescript",
     image: "/tech/Typescript.png",
   },
   {
-    id: 13,
+    id: 14,
     title: "JWT",
     image: "/tech/jwt.svg",
   },
   {
-    id: 14,
+    id: 15,
     title: "Jira",
     image: "/tech/jira.png",
   },
   {
-    id: 15,
+    id: 16,
     title: "Java",
     image: "/tech/java.png",
   },
   {
-    id: 16,
+    id: 17,
     title: "Python",
     image: "/tech/python.png",
   },
   {
-    id: 17,
+    id: 18,
     title: "PHP",
     image: "/tech/php.png",
   },
   {
-    id: 18,
+    id: 19,
     title: "Selenium",
     image: "/tech/selenium.png",
   },
   {
-    id: 19,
+    id: 20,
     title: "Postman",
     image: "/tech/postman.png",
   },
   {
-    id: 20,
+    id: 21,
     title: "Github",
     image: "/tech/github.png",
   },
   {
-    id: 21,
+    id: 22,
     title: "Figma",
     image: "/tech/figma.png",
   },
   {
-    id: 22,
+    id: 23,
     title: "Firebase",
     image: "/tech/firebase.png",
+  },
+  // {
+  //   id: 24,
+  //   title: "Firebase",
+  //   image: "/tech/firebase.png",
+  // },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "FundFuture",
+    description:
+      "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
+    image: "/fundfuture.png",
+    github: {
+      frontend: "https://github.com/Asaduzzama-n/fund-future",
+      backend: "https://github.com/Asaduzzama-n/funde-future-server",
+    },
+    live: "https://fund-future.web.app/",
+    iconLists: [
+      "/tech/react.png",
+      "/tech/Tailwind CSS.png",
+      "/tech/Node.js.png",
+      "/tech/javascript.png",
+      "/tech/mongo.png",
+    ],
+    gitImg: "/tech/GitHub.png",
+  },
+  {
+    id: 1,
+    title: "FundFuture",
+    description:
+      "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
+    image: "/fundfuture.png",
+    github: {
+      frontend: "https://github.com/Asaduzzama-n/fund-future",
+      backend: "https://github.com/Asaduzzama-n/funde-future-server",
+    },
+    live: "https://fund-future.web.app/",
+    iconLists: [
+      "/tech/react.png",
+      "/tech/Tailwind CSS.png",
+      "/tech/Node.js.png",
+      "/tech/javascript.png",
+      "/tech/mongo.png",
+    ],
+    gitImg: "/tech/GitHub.png",
+  },
+  {
+    id: 1,
+    title: "FundFuture",
+    description:
+      "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
+    image: "/fundfuture.png",
+    github: {
+      frontend: "https://github.com/Asaduzzama-n/fund-future",
+      backend: "https://github.com/Asaduzzama-n/funde-future-server",
+    },
+    live: "https://fund-future.web.app/",
+    iconLists: [
+      "/tech/react.png",
+      "/tech/Tailwind CSS.png",
+      "/tech/Node.js.png",
+      "/tech/javascript.png",
+      "/tech/mongo.png",
+    ],
+    gitImg: "/tech/GitHub.png",
+  },
+];
+
+export const navData = [
+  {
+    id: 1,
+    image: "/github.png",
+    link: "https://github.com/Asaduzzama-n",
+  },
+  {
+    id: 2,
+    image: "/l.png",
+    link: "https://www.linkedin.com/in/asaduzzaman193146/",
+  },
+  {
+    id: 3,
+    image: "/facebook.png",
+    link: "https://www.facebook.com/asaduzzaman.shanto.963/",
   },
 ];
