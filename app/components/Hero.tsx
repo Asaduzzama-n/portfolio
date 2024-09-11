@@ -9,16 +9,16 @@ import arrowIcon from "../../public/arrow.svg";
 
 const Hero = () => {
   return (
-    <section className="pb-10 pt-36 w-4/5 md:w-3/4 mx-auto ">
+    <section className="pb-10  w-4/5 md:w-3/4 mx-auto py-20 md:pt-40 md:h-screen ">
       <div className="">
         <BackgroundBeams></BackgroundBeams>
       </div>
       <div className="text-white flex flex-col-reverse sm:flex-row items-center justify-between">
-        <div className="w-full md:w-1/2 z-50 mx-auto">
+        <div className="w-full md:w-1/2 z-50 mx-auto text-center sm:text-start">
           <div>
             <p className="text-white-100 ">Full-stack Web Developer</p>
             <TextGenerateEffect
-              className="text-start text-[40px] md:text-4xl lg:text-6xl text-white"
+              className=" text-[40px] md:text-4xl lg:text-6xl text-white text-center sm:text-start"
               words="Hello I'am Asaduzzaman"
               filter
             ></TextGenerateEffect>
