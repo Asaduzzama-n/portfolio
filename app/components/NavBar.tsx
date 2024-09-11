@@ -9,7 +9,7 @@ type IItems = {
 
 const NavBar = ({ items }: { items: IItems[] }) => {
   return (
-    <div className=" text-white flex justify-between items-center">
+    <div className=" text-white flex justify-between items-center ">
       <div className="w-1/2">
         <Image height={60} width={60} src={logo} alt="logo"></Image>
       </div>
