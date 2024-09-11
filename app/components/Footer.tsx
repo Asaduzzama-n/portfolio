@@ -6,7 +6,7 @@ import phoneIcon from "../../public/icons8-phone-50.png";
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl w-full mx-auto text-white bg-black-100 ">
+    <div className="max-w-7xl w-full mx-auto text-white bg-black-100 mt-32">
       <div className="flex justify-center items-center ">
         <div className="">
           <h1 className="text-4xl md:text-5xl font-semibold">
