@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Work from "./components/Work";
 import NavBar from "./components/NavBar";
 import { links } from "@/lib/data";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <NavBar items={links}></NavBar>
         </nav>
         <Hero></Hero>
+        <About></About>
       </div>
       <Work></Work>
       <Footer></Footer>

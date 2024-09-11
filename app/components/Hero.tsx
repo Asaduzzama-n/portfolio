@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
         <div className=" w-full md:w-1/2 flex justify-center mb-4"></div>
       </div>
-      <div className="md:my-10 sm:pt-0 mr-0 md:mr-10 flex justify-center">
+      <div className="my-10 flex justify-center">
         <MagicButton
           title="SEE MY WORK"
           icon={arrowIcon}

@@ -23,8 +23,10 @@ const Footer = () => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="font-semibold text-lg">Contact Information</h2>
-          <ul>
+          <h2 className="font-semibold text-sm sm:text-lg">
+            Contact Information
+          </h2>
+          <ul className="text-xs sm:text-sm">
             <li className="flex items-center">
               <Image
                 className="mr-2"
@@ -48,12 +50,12 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <div className="flex  justify-start items-center z-50">
+          <div className="md:flex  md:justify-start md:items-center ">
             {socialData.map(({ id, link, image }) => (
               <a
                 href={link}
                 key={id}
-                className="mx-3 p-1 hover:-translate-y-2 duration-200 "
+                className="mx-3 p-1 hover:-translate-y-2  duration-200 "
               >
                 <Image
                   height={24}
@@ -67,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center my-5 text-sm">
         <div>© 2024 Asaduzzaman. All rights reserved.</div>
       </div>
     </div>
