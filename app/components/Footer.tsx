@@ -55,7 +55,7 @@ const Footer = () => {
               <a
                 href={link}
                 key={id}
-                className="mx-3 p-1 hover:-translate-y-2  duration-200 bg-gradient-to-r from-purple/10 to-purple/15 hover:bg-purple/20 mx-1 rounded-lg "
+                className="p-1 hover:-translate-y-2  duration-200 bg-gradient-to-r from-purple/10 to-purple/15 hover:bg-purple/20 mx-1 rounded-lg "
               >
                 <Image
                   height={24}
