@@ -1,15 +1,13 @@
-import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import downloadIcon from "../../public/download.png";
 import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
-import arrowIcon from "../../public/arrow.svg";
 import TextRevealing from "./ui/TextRevealing";
 import avatar from "../../public/IMG_3436.png";
 import avatar2 from "../../public/IMG_2690.png";
 import { MotionDiv } from "./ui/MotionDiv";
 import { leftTransition, rightTransition } from "@/lib/framer-motion";
+import { ArrowUpRight, Download } from "lucide-react";
 
 const avatars = [avatar, avatar2];
 
@@ -52,7 +50,7 @@ const Hero = () => {
             <div className="pt-5 sm:pt-0 mr-0 md:mr-10">
               <MagicButton
                 title="DOWNLOAD CV"
-                icon={downloadIcon}
+                icon={<Download className="w-6 h-6 p-1 ml-2 text-purple" />}
                 otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
               ></MagicButton>
             </div>
@@ -83,7 +81,7 @@ const Hero = () => {
         <a href="#projects">
           <MagicButton
             title="SEE MY WORK"
-            icon={arrowIcon}
+            icon={<ArrowUpRight className="w-7 h-7 p-1 ml-2 text-purple" />}
             otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
           ></MagicButton>
         </a>

@@ -1,8 +1,6 @@
 import { socialData } from "@/lib/data";
 import ContactMe from "./ContactMe";
-import Image from "next/image";
-import gmailIcon from "../../public/icons8-gmail-50.png";
-import phoneIcon from "../../public/icons8-phone-50.png";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -23,49 +21,34 @@ const Footer = () => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="font-semibold text-sm sm:text-lg">
+          <h2 className="font-semibold text-sm sm:text-lg my-4 ">
             Contact Information
           </h2>
           <ul className="text-xs sm:text-sm">
             <li className="flex items-center">
-              <Image
-                className="mr-2"
-                src={phoneIcon}
-                height={15}
-                width={15}
-                alt="gmail"
-              ></Image>
+              <Phone className="w-4 mr-2 text-purple/80" />
               <span>+088 01889126591</span>
             </li>
             <li className="flex items-center">
-              <Image
-                className="mr-2"
-                src={gmailIcon}
-                height={15}
-                width={15}
-                alt="gmail"
-              ></Image>
+              <Mail className="w-4 mr-2 text-purple/80" />
               <span>masaduzzaman193146@gmail.com</span>
             </li>
           </ul>
         </div>
         <div>
           <div className="md:flex  md:justify-start md:items-center ">
-            {socialData.map(({ id, link, image }) => (
-              <a
-                href={link}
-                key={id}
-                className="p-1 hover:-translate-y-2  duration-200 bg-gradient-to-r from-purple/10 to-purple/15 hover:bg-purple/20 mx-1 rounded-lg "
-              >
-                <Image
-                  height={24}
-                  width={24}
-                  src={image}
-                  alt="social-image"
-                  className=""
-                ></Image>
-              </a>
-            ))}
+            {socialData.map(({ id, link, icon }) => {
+              const Icon = icon;
+              return (
+                <a
+                  key={id}
+                  className="bg-gradient-to-r from-purple/10 to-purple/15 hover:bg-purple/20 mx-1 rounded-sm"
+                  href={link}
+                >
+                  <Icon className="w-8 h-8 p-2 text-purple/80" />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ const MagicButton = ({
   otherClasses,
 }: {
   title: string;
-  icon?: string;
+  icon?: any;
   position?: string;
   handleClick?: () => void;
   otherClasses?: string;
@@ -22,13 +23,7 @@ const MagicButton = ({
           className={`font-semibold inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm  text-white backdrop-blur-3xl ${otherClasses}`}
         >
           {title}
-          <Image
-            src={icon}
-            height={title === "DOWNLOAD CV" ? 20 : 12}
-            width={title === "DOWNLOAD CV" ? 20 : 12}
-            alt="image"
-            className="mx-3 flex j"
-          ></Image>
+          {icon}
         </span>
       </button>
     </div>

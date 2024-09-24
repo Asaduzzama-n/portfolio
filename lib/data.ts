@@ -1,22 +1,19 @@
+import { Facebook, Github, Linkedin } from "lucide-react";
+
 export const socialData = [
   {
     id: 1,
-    image: "/github.png",
+    icon: Github,
     link: "https://github.com/Asaduzzama-n",
   },
   {
     id: 2,
-    image: "/facebook.png",
+    icon: Facebook,
     link: "https://www.facebook.com/asaduzzaman.shanto.963/",
   },
   {
     id: 3,
-    image: "/instagram.png",
-    link: "https://www.facebook.com/asaduzzaman.shanto.963/",
-  },
-  {
-    id: 4,
-    image: "/l.png",
+    icon: Linkedin,
     link: "https://www.facebook.com/asaduzzaman.shanto.963/",
   },
 ];
@@ -407,17 +404,17 @@ export const projects = [
 export const navData = [
   {
     id: 1,
-    image: "/github.png",
+    icon: Github, // Pass the component directly
     link: "https://github.com/Asaduzzama-n",
   },
   {
     id: 2,
-    image: "/l.png",
+    icon: Linkedin,
     link: "https://www.linkedin.com/in/asaduzzaman193146/",
   },
   {
     id: 3,
-    image: "/facebook.png",
+    icon: Facebook,
     link: "https://www.facebook.com/asaduzzaman.shanto.963/",
   },
 ];
