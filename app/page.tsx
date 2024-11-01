@@ -3,8 +3,8 @@ import Hero from "./components/Hero";
 
 import Work from "./components/Work";
 import NavBar from "./components/NavBar";
-import { links } from "@/lib/data";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -15,8 +15,10 @@ export default function Home() {
         </nav>
         <Hero></Hero>
         <About></About>
+        <Work></Work>
+        <Experience></Experience>
       </div>
-      <Work></Work>
+
       <Footer></Footer>
     </main>
   );

@@ -14,7 +14,7 @@ const TextRevealing = ({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      transition={{ staggerChildren: 0.04 }}
+      transition={{ staggerChildren: 0.02 }}
     >
       {Array.from(text).map((char, index) => (
         <motion.span

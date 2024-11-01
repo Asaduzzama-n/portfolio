@@ -35,8 +35,8 @@ const About = () => {
             variants={leftTransition}
             className=" w-full md:mx-2 sm:w-2/3  bg-purple/5 rounded-md p-4 "
           >
-            <h1 className="text-xl ">Education</h1>
-            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-5 my-5">
+            <h4 className="text-xl text-purple">Education</h4>
+            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-5 my-5 ">
               {educationData?.map(
                 ({ id, title, timeline, courseType, institute }) => (
                   <MotionDiv
@@ -49,12 +49,12 @@ const About = () => {
                       ease: "easeInOut",
                       duration: 0.8,
                     }}
-                    className="mx-4 relative h-40 border-b-4 bg-gradient-to-r from-purple/5 to-purple/10 rounded-md hover:scale-110 hover:bg-purple/10 duration-200  border-purple/5 p-4 "
+                    className="mx-4  relative h-40 border-b-4 bg-gradient-to-r from-purple/5 to-purple/10 rounded-md hover:scale-110 hover:bg-purple/10 duration-200  border-purple/15 p-4"
                     key={id}
                   >
                     <p className=" ">{title}</p>
                     <br />
-                    <div className="absolute bottom-5">
+                    <div className="absolute bottom-3 md:bottom-5">
                       <div className="mb-2">
                         <small className="bg-purple/20 px-2 py-1 rounded-full mr-2">
                           {courseType}
@@ -77,7 +77,7 @@ const About = () => {
             variants={rightTransition}
             className="w-full  sm:w-1/3 md:mx-2 bg-purple/5 rounded-md p-4 mt-5 sm:mt-0"
           >
-            <h1 className="text-xl">Beyond the Code</h1>
+            <h4 className="text-xl text-purple">Beyond the Code</h4>
             <small className="">
               Explore my interests and hobbies beyond the digital realm.
             </small>
@@ -109,7 +109,7 @@ const About = () => {
           variants={bottomTransition}
           className="w-full bg-purple/5  rounded-md p-4 my-5 "
         >
-          <h1 className="text-xl ">My Toolbox</h1>
+          <h4 className="text-xl text-purple">My Toolbox</h4>
           <small className="">
             Explore the technologies and tools I use to craft exceptional
             digital experiences.

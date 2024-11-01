@@ -7,7 +7,8 @@ import avatar from "../../public/IMG_3436.png";
 import avatar2 from "../../public/IMG_2690.png";
 import { MotionDiv } from "./ui/MotionDiv";
 import { leftTransition, rightTransition } from "@/lib/framer-motion";
-import { ArrowUpRight, Download } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { profile } from "@/lib/data";
 
 const avatars = [avatar, avatar2];
 
@@ -17,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="pb-10   mx-auto py-20 md:pt-40 min-h-screen">
+    <section className="   mx-auto py-20 md:pt-40 min-h-screen">
       <div className="">
         <BackgroundBeams></BackgroundBeams>
       </div>
@@ -32,21 +33,20 @@ const Hero = () => {
           <div className="my-5 sm:my-0">
             <TextRevealing
               className="text-white-100"
-              text="Full-stack Web Developer"
+              text={profile?.title}
             ></TextRevealing>
 
             <TextGenerateEffect
               className=" text-[40px] md:text-4xl lg:text-6xl text-white text-center sm:text-start"
-              words="Hello I'am Asaduzzaman"
+              words={`Hello I'am ${profile?.name}`}
               filter
             ></TextGenerateEffect>
             <TextRevealing
               className="w-full  mx-auto"
-              text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              in asperiores accusamus animi? Libero, maxime!"
+              text={profile?.description}
             ></TextRevealing>
           </div>
-          <div className="flex flex-col-reverse  sm:flex-row my-5  items-center justify-start ">
+          {/* <div className="flex flex-col-reverse  sm:flex-row my-5  items-center justify-start ">
             <div className="pt-5 sm:pt-0 mr-0 md:mr-10">
               <MagicButton
                 title="DOWNLOAD CV"
@@ -54,9 +54,8 @@ const Hero = () => {
                 otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
               ></MagicButton>
             </div>
-          </div>
+          </div> */}
         </MotionDiv>
-        <div className=" w-full md:w-1/2 flex justify-center mb-4"></div>
         <MotionDiv
           initial="offscreen"
           whileInView="onscreen"
@@ -65,19 +64,19 @@ const Hero = () => {
           transition={{
             duration: 1,
           }}
-          className="z-50"
+          className="z-50  md:w-1/3"
         >
           <Image
             src={changeAvatar()}
-            height={700}
-            width={500}
-            className="rounded-md "
+            height={600} // Adjust height here
+            width={400} // Adjust width here
+            className="rounded-md w-1/2   mx-auto md:w-2/3 md:mx-0 shadow-purple shadow-md  opacity-90"
             alt="avatar"
-          ></Image>
+          />
         </MotionDiv>
       </div>
 
-      <div className="mt-20 flex justify-center">
+      <div className="md:mt-20 flex justify-center">
         <a href="#projects">
           <MagicButton
             title="SEE MY WORK"

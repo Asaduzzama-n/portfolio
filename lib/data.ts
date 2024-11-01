@@ -168,8 +168,23 @@ export const links = [
 
     href: "#projects",
   },
-];
+  {
+    id: 4,
+    title: "Contact",
 
+    href: "#contact",
+  },
+];
+export const profile = {
+  name: "Asaduzzaman",
+  linkedin: "https://www.linkedin.com/in/asaduzzaman193146/",
+  github: "https://github.com/Asaduzzama-n",
+  facebook: "https://www.facebook.com/asaduzzaman.shanto.963/",
+  twitter: "Yash",
+  description:
+    "I'm just a humble software engineer, endlessly striving to make web applications that are secure, user-friendly, and efficient—because who doesn’t love pouring hours into invisible backend magic and pixel-perfect layouts that 'just work'? I blend design and functionality, aiming for web solutions that are not only robust but, dare I say, actually look good too.",
+  title: "Software Engineer | Full-Stack Web Developer",
+};
 export const hobbies = [
   {
     id: 1,
@@ -201,15 +216,15 @@ export const hobbies = [
   },
   {
     id: 5,
-    title: "Gaming",
-    emoji: "🎮",
+    title: "Traveling",
+    emoji: "✈",
     left: "55%",
     top: "90%",
   },
   {
     id: 6,
-    title: "Gaming",
-    emoji: "🎮",
+    title: "Learning",
+    emoji: "🎓",
     left: "15%",
     top: "80%",
   },
@@ -416,5 +431,44 @@ export const navData = [
     id: 3,
     icon: Facebook,
     link: "https://www.facebook.com/asaduzzaman.shanto.963/",
+  },
+];
+
+export const workExperiences = [
+  {
+    id: 1,
+    title: "Backend Developer",
+    company: "BdCalling It",
+    link: "https://bdcalling.com/",
+    duration: "Nov 2024 - Present",
+    description: "Developing and maintaining web applications.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "JavaScript",
+      "Typescript",
+      "MongoDB",
+      "Mongoose",
+      "postgreSQL",
+      "Prisma",
+    ],
+  },
+  {
+    id: 2,
+    title: "Backend Developer",
+    company: "BdCalling It",
+    link: "https://bdcalling.com/",
+    duration: "Nov 2024 - Present",
+    description: "Developing and maintaining web applications.",
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "JavaScript",
+      "Typescript",
+      "MongoDB",
+      "Mongoose",
+      "postgreSQL",
+      "Prisma",
+    ],
   },
 ];
