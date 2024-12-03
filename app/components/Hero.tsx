@@ -9,8 +9,25 @@ import { MotionDiv } from "./ui/MotionDiv";
 import { leftTransition, rightTransition } from "@/lib/framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { profile } from "@/lib/data";
+import { Spotlight } from "./ui/spotlight";
+import { TypewriterEffectSmooth } from "./ui/type-write-effect";
 
 const avatars = [avatar, avatar2];
+
+const words = [
+  {
+    text: "Hello",
+    className: "text-white",
+  },
+  {
+    text: "I'm",
+    className: "text-white",
+  },
+  {
+    text: "Asaduzzaman",
+    className: "text-purple dark:text-blue-500",
+  },
+];
 
 const Hero = () => {
   const changeAvatar = () => {
@@ -18,9 +35,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="   mx-auto py-20 md:pt-40 min-h-screen">
+    <section className="   mx-auto py-20 md:pt-40 ">
       <div className="">
-        <BackgroundBeams></BackgroundBeams>
+        {/* <BackgroundBeams></BackgroundBeams> */}
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20"
+          fill="white"
+        />
       </div>
       <div className="text-white flex flex-col-reverse sm:flex-row items-center justify-between">
         <MotionDiv
@@ -31,16 +52,17 @@ const Hero = () => {
           className="w-full md:w-1/2 z-50 mx-auto text-center sm:text-start"
         >
           <div className="my-5 sm:my-0">
+            <TypewriterEffectSmooth words={words} />
             <TextRevealing
-              className="text-white-100"
+              className="text-purple  md:text-2xl  font-semibold "
               text={profile?.title}
             ></TextRevealing>
-
-            <TextGenerateEffect
+            <br />
+            {/* <TextGenerateEffect
               className=" text-[40px] md:text-4xl lg:text-6xl text-white text-center sm:text-start"
               words={`Hello I'am ${profile?.name}`}
               filter
-            ></TextGenerateEffect>
+            ></TextGenerateEffect> */}
             <TextRevealing
               className="w-full  mx-auto"
               text={profile?.description}

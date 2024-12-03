@@ -36,7 +36,7 @@ const About = () => {
             className=" w-full md:mx-2 sm:w-2/3  bg-purple/5 rounded-md p-4 "
           >
             <h4 className="text-xl text-purple">Education</h4>
-            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-5 my-5 ">
+            <div className="grid  grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4 my-5 ">
               {educationData?.map(
                 ({ id, title, timeline, courseType, institute }) => (
                   <MotionDiv
@@ -49,7 +49,7 @@ const About = () => {
                       ease: "easeInOut",
                       duration: 0.8,
                     }}
-                    className="mx-4  relative h-40 border-b-4 bg-gradient-to-r from-purple/5 to-purple/10 rounded-md hover:scale-110 hover:bg-purple/10 duration-200  border-purple/15 p-4"
+                    className=" relative h-40 border-b-4 bg-gradient-to-r from-purple/5 to-purple/10 rounded-md hover:scale-110 hover:bg-purple/10 duration-200  border-purple/15 p-4"
                     key={id}
                   >
                     <p className=" ">{title}</p>
@@ -110,10 +110,11 @@ const About = () => {
           className="w-full bg-purple/5  rounded-md p-4 my-5 "
         >
           <h4 className="text-xl text-purple">My Toolbox</h4>
-          <small className="">
+          <br />
+          <p className="">
             Explore the technologies and tools I use to craft exceptional
             digital experiences.
-          </small>
+          </p>
           <MotionDiv
             initial="offscreen"
             whileInView="onscreen"

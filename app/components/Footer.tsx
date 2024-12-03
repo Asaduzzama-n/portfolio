@@ -1,12 +1,12 @@
 import { socialData } from "@/lib/data";
-import ContactMe from "./ContactMe";
+// import ContactMe from "./ContactMe";
 import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
     <div className="max-w-7xl w-full mx-auto text-white bg-black-100 mt-32">
       <div className="flex justify-center items-center ">
-        <div className="">
+        {/* <div className="">
           <h1 className="text-4xl md:text-5xl font-semibold">
             Let&apos;s <span className="text-purple">work</span> together
           </h1>
@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="flex justify-center my-10">
             <ContactMe></ContactMe>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-between items-center">
         <div>

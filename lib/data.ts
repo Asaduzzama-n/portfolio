@@ -197,8 +197,8 @@ export const hobbies = [
     id: 2,
     title: "Football",
     emoji: "⚽",
-    left: "50%",
-    top: "20%",
+    left: "40%",
+    top: "25%",
   },
   {
     id: 3,
@@ -218,8 +218,8 @@ export const hobbies = [
     id: 5,
     title: "Traveling",
     emoji: "✈",
-    left: "55%",
-    top: "90%",
+    left: "35%",
+    top: "95%",
   },
   {
     id: 6,
@@ -435,24 +435,6 @@ export const navData = [
 ];
 
 export const workExperiences = [
-  {
-    id: 1,
-    title: "Backend Developer",
-    company: "BdCalling It",
-    link: "https://bdcalling.com/",
-    duration: "Nov 2024 - Present",
-    description: "Developing and maintaining web applications.",
-    technologies: [
-      "Node.js",
-      "Express.js",
-      "JavaScript",
-      "Typescript",
-      "MongoDB",
-      "Mongoose",
-      "postgreSQL",
-      "Prisma",
-    ],
-  },
   {
     id: 2,
     title: "Backend Developer",
