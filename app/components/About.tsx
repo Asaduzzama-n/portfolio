@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { educationData, hobbies, techData } from "@/lib/data";
 import Image from "next/image";
 import { MotionDiv } from "./ui/MotionDiv";
