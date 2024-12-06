@@ -183,7 +183,7 @@ export const profile = {
   twitter: "Yash",
   description:
     "I'm just a humble software engineer, endlessly striving to make web applications that are secure, user-friendly, and efficient—because who doesn’t love pouring hours into invisible backend magic and pixel-perfect layouts that 'just work'? I blend design and functionality, aiming for web solutions that are not only robust but, dare I say, actually look good too.",
-  title: "Software Engineer | Full-Stack Web Developer",
+  title: "Software Engineer | Full-Stack Developer",
 };
 export const hobbies = [
   {
@@ -346,11 +346,21 @@ export const techData = [
     title: "Firebase",
     image: "/tech/firebase.png",
   },
-  // {
-  //   id: 24,
-  //   title: "Firebase",
-  //   image: "/tech/firebase.png",
-  // },
+  {
+    id: 24,
+    title: "Socket.io",
+    image: "/tech/socket-io.svg",
+  },
+  {
+    id: 24,
+    title: "AWS",
+    image: "/tech/aws.png",
+  },
+  {
+    id: 24,
+    title: "Clodinary",
+    image: "/tech/cloud.png",
+  },
 ];
 
 export const projects = [
@@ -375,16 +385,16 @@ export const projects = [
     gitImg: "/tech/GitHub.png",
   },
   {
-    id: 1,
-    title: "FundFuture",
+    id: 2,
+    title: "VERSEVOYAGE",
     description:
-      "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
-    image: "/fundfuture.png",
+      "VerseVoyage is a digital platform for exploring and reading eBooks. It offers a seamless journey through diverse genres and captivating stories.",
+    image: "/vv.png",
     github: {
-      frontend: "https://github.com/Asaduzzama-n/fund-future",
-      backend: "https://github.com/Asaduzzama-n/funde-future-server",
+      frontend: "https://github.com/Asaduzzama-n/book-catalogue-frontend",
+      backend: "https://github.com/Asaduzzama-n/eBook-backend",
     },
-    live: "https://fund-future.web.app/",
+    live: "https://versevoyage-91e8e-7ba99.web.app/",
     iconLists: [
       "/tech/react.png",
       "/tech/Tailwind CSS.png",
@@ -394,26 +404,26 @@ export const projects = [
     ],
     gitImg: "/tech/GitHub.png",
   },
-  {
-    id: 1,
-    title: "FundFuture",
-    description:
-      "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
-    image: "/fundfuture.png",
-    github: {
-      frontend: "https://github.com/Asaduzzama-n/fund-future",
-      backend: "https://github.com/Asaduzzama-n/funde-future-server",
-    },
-    live: "https://fund-future.web.app/",
-    iconLists: [
-      "/tech/react.png",
-      "/tech/Tailwind CSS.png",
-      "/tech/Node.js.png",
-      "/tech/javascript.png",
-      "/tech/mongo.png",
-    ],
-    gitImg: "/tech/GitHub.png",
-  },
+  // {
+  //   id: 1,
+  //   title: "FundFuture",
+  //   description:
+  //     "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
+  //   image: "/fundfuture.png",
+  //   github: {
+  //     frontend: "https://github.com/Asaduzzama-n/fund-future",
+  //     backend: "https://github.com/Asaduzzama-n/funde-future-server",
+  //   },
+  //   live: "https://fund-future.web.app/",
+  //   iconLists: [
+  //     "/tech/react.png",
+  //     "/tech/Tailwind CSS.png",
+  //     "/tech/Node.js.png",
+  //     "/tech/javascript.png",
+  //     "/tech/mongo.png",
+  //   ],
+  //   gitImg: "/tech/GitHub.png",
+  // },
 ];
 
 export const navData = [
@@ -451,6 +461,8 @@ export const workExperiences = [
       "Mongoose",
       "postgreSQL",
       "Prisma",
+      "Socket.io",
+      "AWS",
     ],
   },
 ];

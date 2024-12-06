@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Experience from "./components/Experience";
+// import CurrentlyLearning from "./components/Learning";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About></About>
         <Work></Work>
         <Experience></Experience>
+        {/* <CurrentlyLearning></CurrentlyLearning> */}
       </div>
 
       <Footer></Footer>

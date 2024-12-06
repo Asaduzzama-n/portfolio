@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { projects } from "@/lib/data";
 import { MotionDiv } from "./ui/MotionDiv";
 import TextRevealing from "./ui/TextRevealing";
 import { PinContainer } from "./ui/3d-pin";
-import { bottomTransition, charVariants, variants } from "@/lib/framer-motion";
+import { variants } from "@/lib/framer-motion";
 
 const Work = () => {
   return (
@@ -51,7 +52,7 @@ const Work = () => {
                   <img
                     src={image}
                     alt="cover"
-                    className="z-10 absolute bottom-0 rounded-md"
+                    className="z-10 absolute bottom-0 rounded-md max-h-60 w-full"
                   />
                 </div>
 

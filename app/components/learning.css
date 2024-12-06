@@ -1,0 +1,23 @@
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  max-width: 100%; /* Ensures it never overflows */
+  animation: typewriter 4.5s steps(100, end), blink 1s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #cbacf9;
+}

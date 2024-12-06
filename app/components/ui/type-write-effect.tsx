@@ -110,23 +110,27 @@ export const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // split text inside of words into array of characters
+  // Split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
       text: word.text.split(""),
     };
   });
+
   const renderWords = () => {
     return (
-      <div>
+      <div className="inline-block">
         {wordsArray.map((word, idx) => {
           return (
             <div key={`word-${idx}`} className="inline-block">
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black`, word.className)}
+                  className={cn(
+                    `dark:text-white no-wrap text-black`,
+                    word.className
+                  )}
                 >
                   {char}
                 </span>
@@ -142,12 +146,12 @@ export const TypewriterEffectSmooth = ({
   return (
     <div
       className={cn(
-        "flex space-x-1 my-6 text-base sm:text-2xl md:text-3xl lg:text-5xl text-center",
+        "flex flex-wrap items-center my-6 text-xl md:text-3xl lg:text-5xl font-semibold text-center",
         className
       )}
     >
       <motion.div
-        className="overflow-hidden pb-2"
+        className="overflow-hidden pb-2 inline-block"
         initial={{
           width: "0%",
         }}
@@ -161,14 +165,16 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-base sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center"
+          className="text-xl md:text-3xl lg:text-4xl font-semibold text-center inline-block"
           style={{
             whiteSpace: "nowrap",
           }}
         >
-          {renderWords()}{" "}
-        </div>{" "}
+          {renderWords()}
+        </div>
       </motion.div>
+
+      {/* Blinking cursor */}
       <motion.span
         initial={{
           opacity: 0,
@@ -177,14 +183,14 @@ export const TypewriterEffectSmooth = ({
           opacity: 1,
         }}
         transition={{
-          duration: 0.8,
-
+          duration: 0.02,
           repeat: Infinity,
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px] h-4 sm:h-6 xl:h-12 bg-purple",
-          cursorClassName
+          "inline-block rounded-sm w-[5px] h-6 sm:h-12 xl:h-14 bg-purple",
+          cursorClassName,
+          "align-middle ml-1" // Ensure the cursor stays inline and adds a slight margin
         )}
       ></motion.span>
     </div>

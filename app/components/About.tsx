@@ -134,10 +134,10 @@ const About = () => {
                 }}
                 key={id}
                 id="item"
-                className="hover:-translate-y-1 hover:bg-purple/15 flex items-center justify-center w-24 h-20 bg-gradient-to-tr from-purple/5 to-purple/15 rounded-md m-2 "
+                className="hover:-translate-y-1 hover:bg-purple/10 flex items-center justify-center w-24 h-20 bg-gradient-to-tr from-purple/5 to-purple/15 rounded-md m-2 hover:scale-x-400 hover:duration-300 "
               >
                 <Image
-                  className="p-1 rounded-md"
+                  className="p-1 rounded-md "
                   src={image}
                   height={50}
                   width={50}

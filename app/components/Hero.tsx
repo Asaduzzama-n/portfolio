@@ -1,5 +1,3 @@
-import { BackgroundBeams } from "./ui/background-beams";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Image from "next/image";
 import MagicButton from "./ui/MagicButton";
 import TextRevealing from "./ui/TextRevealing";
@@ -7,10 +5,11 @@ import avatar from "../../public/IMG_3436.png";
 import avatar2 from "../../public/IMG_2690.png";
 import { MotionDiv } from "./ui/MotionDiv";
 import { leftTransition, rightTransition } from "@/lib/framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 import { profile } from "@/lib/data";
 import { Spotlight } from "./ui/spotlight";
 import { TypewriterEffectSmooth } from "./ui/type-write-effect";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const avatars = [avatar, avatar2];
 
@@ -52,31 +51,32 @@ const Hero = () => {
           className="w-full md:w-1/2 z-50 mx-auto text-center sm:text-start"
         >
           <div className="my-5 sm:my-0">
-            <TypewriterEffectSmooth words={words} />
-            <TextRevealing
-              className="text-purple  md:text-2xl  font-semibold "
-              text={profile?.title}
-            ></TextRevealing>
-            <br />
-            {/* <TextGenerateEffect
+            <TextGenerateEffect
               className=" text-[40px] md:text-4xl lg:text-6xl text-white text-center sm:text-start"
               words={`Hello I'am ${profile?.name}`}
               filter
-            ></TextGenerateEffect> */}
+            ></TextGenerateEffect>
+            <TextRevealing
+              className="text-purple  md:text-xl  font-semibold "
+              text={profile?.title}
+            ></TextRevealing>
+            <br />
             <TextRevealing
               className="w-full  mx-auto"
               text={profile?.description}
             ></TextRevealing>
           </div>
-          {/* <div className="flex flex-col-reverse  sm:flex-row my-5  items-center justify-start ">
+          <div className="flex flex-col-reverse  sm:flex-row my-5  items-center justify-start ">
             <div className="pt-5 sm:pt-0 mr-0 md:mr-10">
-              <MagicButton
-                title="DOWNLOAD CV"
-                icon={<Download className="w-6 h-6 p-1 ml-2 text-purple" />}
-                otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
-              ></MagicButton>
+              <a href="/Asaduzzaman_uiu_cv.pdf" download>
+                <MagicButton
+                  title="DOWNLOAD CV"
+                  icon={<Download className="w-6 h-6 p-1 ml-2 text-purple" />}
+                  otherClasses="w-full hover:bg-gradient-to-r from-purple/5 to-purple/15"
+                ></MagicButton>
+              </a>
             </div>
-          </div> */}
+          </div>
         </MotionDiv>
         <MotionDiv
           initial="offscreen"
