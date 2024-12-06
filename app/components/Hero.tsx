@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="my-5 sm:my-0">
             <TextGenerateEffect
               className=" text-[40px] md:text-4xl lg:text-6xl text-white text-center sm:text-start"
-              words={`Hello I'am ${profile?.name}`}
+              words={`Hello I'm ${profile?.name}`}
               filter
             ></TextGenerateEffect>
             <TextRevealing
