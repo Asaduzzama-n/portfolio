@@ -8,25 +8,10 @@ import { leftTransition, rightTransition } from "@/lib/framer-motion";
 import { ArrowUpRight, Download } from "lucide-react";
 import { profile } from "@/lib/data";
 import { Spotlight } from "./ui/spotlight";
-import { TypewriterEffectSmooth } from "./ui/type-write-effect";
+
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const avatars = [avatar, avatar2];
-
-const words = [
-  {
-    text: "Hello",
-    className: "text-white",
-  },
-  {
-    text: "I'm",
-    className: "text-white",
-  },
-  {
-    text: "Asaduzzaman",
-    className: "text-purple dark:text-blue-500",
-  },
-];
 
 const Hero = () => {
   const changeAvatar = () => {

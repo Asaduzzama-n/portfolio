@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-types */
 "use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
@@ -226,7 +224,7 @@ export const useOutsideClick = (
   callback: Function
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
+    const listener = (event: unknown) => {
       // DO NOTHING if the element being clicked is the target element or their children
       if (!ref.current || ref.current.contains(event.target)) {
         return;
