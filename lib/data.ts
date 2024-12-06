@@ -234,17 +234,17 @@ export const techData = [
   {
     id: 1,
     title: "HTML",
-    image: "/tech/html5.png",
+    image: "/tech/HTML5.png",
   },
   {
     id: 2,
     title: "CSS",
-    image: "/tech/css3.png",
+    image: "/tech/CSS3.png",
   },
   {
     id: 3,
     title: "Tailwind CSS",
-    image: "/tech/tailwind CSS.png",
+    image: "/tech/Tailwind CSS.png",
   },
   {
     id: 4,
@@ -254,12 +254,12 @@ export const techData = [
   {
     id: 5,
     title: "NEXT.js",
-    image: "/tech/next.js.png",
+    image: "/tech/Next.js.png",
   },
   {
     id: 6,
     title: "REDUX",
-    image: "/tech/redux.png",
+    image: "/tech/Redux.png",
   },
   {
     id: 7,
@@ -294,7 +294,7 @@ export const techData = [
   {
     id: 13,
     title: "Typescript",
-    image: "/tech/Typescript.png",
+    image: "/tech/TypesCript.png",
   },
   {
     id: 14,
@@ -304,47 +304,47 @@ export const techData = [
   {
     id: 15,
     title: "Jira",
-    image: "/tech/jira.png",
+    image: "/tech/Jira.png",
   },
   {
     id: 16,
     title: "Java",
-    image: "/tech/java.png",
+    image: "/tech/Java.png",
   },
   {
     id: 17,
     title: "Python",
-    image: "/tech/python.png",
+    image: "/tech/Python.png",
   },
   {
     id: 18,
     title: "PHP",
-    image: "/tech/php.png",
+    image: "/tech/PHP.png",
   },
   {
     id: 19,
     title: "Selenium",
-    image: "/tech/selenium.png",
+    image: "/tech/Selenium.png",
   },
   {
     id: 20,
     title: "Postman",
-    image: "/tech/postman.png",
+    image: "/tech/Postman.png",
   },
   {
     id: 21,
     title: "Github",
-    image: "/tech/github.png",
+    image: "/tech/Github.png",
   },
   {
     id: 22,
     title: "Figma",
-    image: "/tech/figma.png",
+    image: "/tech/Figma.png",
   },
   {
     id: 23,
     title: "Firebase",
-    image: "/tech/firebase.png",
+    image: "/tech/Firebase.png",
   },
   {
     id: 24,
