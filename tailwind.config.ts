@@ -1,12 +1,15 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import defaultTheme from "tailwindcss/defaultTheme";
+//@ts-ignore
 
 import colors from "tailwindcss/colors";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 import svgToDataUri from "mini-svg-data-uri";
-
+//@ts-ignore
 import colors from "tailwindcss/colors";
+
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");

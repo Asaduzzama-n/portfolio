@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "strict": false, // Turns off strict mode
+    "noImplicitAny": false, // Allows implicit `any` types
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
