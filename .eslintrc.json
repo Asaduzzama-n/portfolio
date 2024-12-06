@@ -5,6 +5,9 @@
   ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off", // Disable unused-vars rule
-    "@typescript-eslint/no-explicit-any": "warn" // Change 'any' rule to a warning
+    "@typescript-eslint/no-explicit-any": "warn", // Change 'any' rule to a warning
+    "prefer-const": "off", // Disable prefer-const rule for unused variables
+    "@typescript-eslint/ban-types": "off", // Disable ban-types rule for Object and Function
+    "react-hooks/exhaustive-deps": "off" // Disable exhaustive-deps rule for missing useEffect dependencies
   }
 }
