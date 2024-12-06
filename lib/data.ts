@@ -294,17 +294,7 @@ export const techData = [
   {
     id: 13,
     title: "Typescript",
-    image: "/tech/TypesCript.png",
-  },
-  {
-    id: 14,
-    title: "JWT",
-    image: "/tech/jwt.svg",
-  },
-  {
-    id: 15,
-    title: "Jira",
-    image: "/tech/Jira.png",
+    image: "/tech/TypeScript.png",
   },
   {
     id: 16,
@@ -322,6 +312,16 @@ export const techData = [
     image: "/tech/PHP.png",
   },
   {
+    id: 14,
+    title: "JWT",
+    image: "/tech/jwt.svg",
+  },
+  {
+    id: 15,
+    title: "Jira",
+    image: "/tech/Jira.png",
+  },
+  {
     id: 19,
     title: "Selenium",
     image: "/tech/Selenium.png",
@@ -334,7 +334,7 @@ export const techData = [
   {
     id: 21,
     title: "Github",
-    image: "/tech/Github.png",
+    image: "/tech/GitHub.png",
   },
   {
     id: 22,
@@ -369,7 +369,7 @@ export const projects = [
     title: "FundFuture",
     description:
       "Welcome to FundFuture! This is a project aimed at providing a platform for individuals and organizations to create and donate to fundraising campaigns.",
-    image: "/fundfuture.png",
+    image: "/fundfuture.PNG",
     github: {
       frontend: "https://github.com/Asaduzzama-n/fund-future",
       backend: "https://github.com/Asaduzzama-n/funde-future-server",
@@ -379,7 +379,7 @@ export const projects = [
       "/tech/react.png",
       "/tech/Tailwind CSS.png",
       "/tech/Node.js.png",
-      "/tech/javascript.png",
+      "/tech/JavaScript.png",
       "/tech/mongo.png",
     ],
     gitImg: "/tech/GitHub.png",
@@ -399,7 +399,7 @@ export const projects = [
       "/tech/react.png",
       "/tech/Tailwind CSS.png",
       "/tech/Node.js.png",
-      "/tech/javascript.png",
+      "/tech/TypeScript.png",
       "/tech/mongo.png",
     ],
     gitImg: "/tech/GitHub.png",
